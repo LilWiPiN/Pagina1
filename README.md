@@ -30,44 +30,6 @@ En general, fue un cambio más estético que de estructura el realizado, ya que 
 
 ![Despues](img/after.png)
 
+## Taller 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Despues](img/Taller%201.png)
