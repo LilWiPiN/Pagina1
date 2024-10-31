@@ -1,0 +1,174 @@
+:root{
+    --colorBackground: #FFFFFF;
+    --colorButtons: #006DCC;
+    --colorRed: #E20613;
+    --colorYellow: #FFD300;
+    --colorBlack: #1D1D1B;
+    --colorPlaceHolders: rgba(0, 0, 0, 0.7);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /*adapta la altura de la imagen sin importar el tamaño de la ventana*/
+    width: 100%;
+    position: relative;
+}
+
+header, main {
+    position: relative;
+    z-index: 2; 
+}
+
+header{
+    width: auto;
+    height: 102px;
+    background: var(--colorRed);
+    margin-bottom: 120px;
+}
+
+header img{
+    width: auto;
+    height: 62px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+header .LineYellow{
+    margin-top: 14px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login {
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+    border-radius: 26px;
+    background: var(--colorBackground);
+}
+
+.Title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--colorRed);
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.Title h1 {
+    font-size: 32px;
+    color: var(--colorBackground);
+}
+
+.LineYellow{
+    margin-top: 20px;
+    width: 100%;
+    height: 5px;
+    background-color: var(--colorYellow);
+}
+.LineBlack{
+    width: 100%;
+    height: 15px;
+    background-color: var(--colorBlack);
+}
+
+.Login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 20rem; /*1rem = 16px - 20*32= 320px*/
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--colorBlack);
+    color: var(--colorBlack);
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: var(--colorPlaceHolders);
+    font-size: 16px; 
+}
+
+input:focus {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    caret-color: var(--colorBlack);
+}
+
+.ButtonLogin {
+    background-color: var(--colorButtons);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 20.0rem;
+}
+
+.ButtonLogin:hover {
+    background-color: #005FB3;
+}
+
+.ButtonLogin:active {
+    background-color: #005299;
+}
+
+.Login p {
+    color: #fff;
+    margin: 15px 0;
+}
+
+.Password{
+    margin: 20px;
+}
+
+.Password a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.Password a:hover {
+    text-decoration: underline;
+}
+
+.Caution{
+    width: 100%;
+    padding: 0 80px;
+    margin-bottom: 40px;
+}
+
+.Login span {
+    display: block;
+    font-size: 14px;
+    background-color: #FCF8E3;
+    border: 1px solid #8A6D3B;
+    border-radius: 10px;
+    color: #8A6D3B; 
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 10px;
+}
